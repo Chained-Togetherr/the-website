@@ -394,3 +394,14 @@ body {
     }
 
 }
+
+/* Styles for Variant Modal Selectors */
+#variant-content select {
+    font-size: 0.875rem;
+    background-color: white;
+    transition: all 0.2s ease;
+}
+
+#variant-content select:focus {
+    box-shadow: 0 0 0 3px rgba(234, 153, 185, 0.1);
+}
