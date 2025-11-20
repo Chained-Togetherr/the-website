@@ -421,7 +421,7 @@ document.getElementById('checkout-btn').addEventListener('click', () => {
 
   message += `%0A*Total: Rp ${total.toLocaleString('id-ID')}*`;
 
-  const phoneNumber = "628999223168";
+  const phoneNumber = "6289518033862";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   window.open(whatsappUrl, '_blank');
@@ -600,3 +600,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
