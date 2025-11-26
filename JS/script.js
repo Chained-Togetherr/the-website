@@ -41,7 +41,14 @@ const products = [
     basePrice: 5000,
     image: "IMG/produk/3.jpg",
     description: "",
-    hasVariants: false
+    hasVariants: true,
+    variants: [
+      {
+        name: "Lonceng",
+        options: ["Tidak", "Ya"],
+        priceAdd: 2000
+      }
+    ]
   },
   {
     id: 4,
@@ -49,7 +56,14 @@ const products = [
     basePrice: 5000,
     image: "IMG/produk/4.jpg",
     description: "",
-    hasVariants: false
+    hasVariants: true,
+    variants: [
+      {
+        name: "Lonceng",
+        options: ["Tidak", "Ya"],
+        priceAdd: 2000
+      }
+    ]
   }
 ];
 
@@ -421,7 +435,7 @@ document.getElementById('checkout-btn').addEventListener('click', () => {
 
   message += `%0A*Total: Rp ${total.toLocaleString('id-ID')}*`;
 
-  const phoneNumber = "6289518033862";
+  const phoneNumber = "628999223168";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   window.open(whatsappUrl, '_blank');
@@ -600,4 +614,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
-
